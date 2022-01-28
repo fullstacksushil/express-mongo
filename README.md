@@ -1,3 +1,4 @@
+App Deployed on Heroku https://express-mongo-getir.herokuapp.com
 ## The Challenge
 Create a RESTful API with a single endpoint that fetches the data in the
 provided MongoDB collection and return the results in the requested format.
@@ -9,19 +10,17 @@ provided MongoDB collection and return the results in the requested format.
  * The up to date repo should be publicly available in Github, Bitbucket or equivalent.
 
 ## Instruction
-This app uses dotenv file for configuration. 
-create a .env file with DB_HOST config vars
+ * This app uses dotenv file for configuration.create a .env file with DB_HOST config vars
 
 ``node app.js``
 
-App Deployed on Heroku https://express-mongo-getir.herokuapp.com
 
 Get all Products
-curl -X POST -H "Content-Type: application/json" https://express-mongo-getir.herokuapp.com/products
+```curl -X POST -H "Content-Type: application/json" https://express-mongo-getir.herokuapp.com/products```
 
 Add new Product
-curl -X POST -H "Content-Type: application/json" --data-raw '{
+```curl -X POST -H "Content-Type: application/json" --data-raw '{
   "title": "Huawei p1",
   "price": 12000,
   "description": "old phone"
-}' https://express-mongo-getir.herokuapp.com/addproduct
+}' https://express-mongo-getir.herokuapp.com/addproduct```
