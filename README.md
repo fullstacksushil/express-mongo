@@ -16,9 +16,9 @@ provided MongoDB collection and return the results in the requested format.
 
 - This app uses dotenv file for configuration.create a .env file with DB_HOST config vars
 
-````console
+```console
 node app.js
-``
+```
 
 
 ### Get records
