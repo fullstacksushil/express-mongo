@@ -15,20 +15,3 @@ provided MongoDB collection and return the results in the requested format.
 ```console
 node app.js
 ```
-
-
-### Get all Products
-
-```console
-curl -X POST -H "Content-Type: application/json" https://express-mongo-getir.herokuapp.com/products
-```
-
-### Add new Product
-
-```console
-curl -X POST -H "Content-Type: application/json" --data-raw '{
-  "title": "Huawei p1",
-  "price": 12000,
-  "description": "old phone"
-}' https://express-mongo-getir.herokuapp.com/addproduct
-```
