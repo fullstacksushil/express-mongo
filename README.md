@@ -12,15 +12,23 @@ provided MongoDB collection and return the results in the requested format.
 ## Instruction
  * This app uses dotenv file for configuration.create a .env file with DB_HOST config vars
 
-``node app.js``
+```console
+node app.js
+```
 
 
-Get all Products
-```curl -X POST -H "Content-Type: application/json" https://express-mongo-getir.herokuapp.com/products```
+### Get all Products
 
-Add new Product
-```curl -X POST -H "Content-Type: application/json" --data-raw '{
+```console
+curl -X POST -H "Content-Type: application/json" https://express-mongo-getir.herokuapp.com/products
+```
+
+### Add new Product
+
+```console
+curl -X POST -H "Content-Type: application/json" --data-raw '{
   "title": "Huawei p1",
   "price": 12000,
   "description": "old phone"
-}' https://express-mongo-getir.herokuapp.com/addproduct```
+}' https://express-mongo-getir.herokuapp.com/addproduct
+```
